@@ -11,15 +11,15 @@ int main()
   string T;
   if (S.size() % 2 == 0)
   {
-    T = S.substr(S.size() / 2, S.size());
+    T = S.substr(S.size() / 2);
     reverse(T.begin(), T.end());
-    S.erase(S.size() / 2, S.size());
+    S.erase(S.size() / 2, S.size() / 2);
   }
   else
   {
-    T = S.substr(S.size() / 2, S.size());
+    T = S.substr(S.size() / 2);
     reverse(T.begin(), T.end());
-    S.erase(S.size() / 2 + 1, S.size());
+    S.erase(S.size() / 2 + 1, S.size() / 2);
   }
 
   int count = 0;
